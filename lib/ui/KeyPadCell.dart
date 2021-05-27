@@ -22,10 +22,10 @@ class _KeyPadCellState extends State<KeyPadCell> {
       child: InkResponse(
           onTap: () {
             setState(() {
-              this.widget.notifyParent();
               if (!this.widget.unable[this.widget.activeCell[0]][this.widget.activeCell[1]]) {
                 this.widget.tablero[this.widget.activeCell[0]][this.widget.activeCell[1]] = this.widget.number;
               }
+              this.widget.notifyParent();
             });
           },
           child: Container(child: Center(child: Text(this.widget.number.toString(), style: TextStyle(fontSize: 38))))),

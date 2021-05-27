@@ -75,7 +75,13 @@ class _PlayPageState extends State<PlayPage> {
                           numberOfParticles: 20,
                           gravity: 0.05,
                           shouldLoop: false,
-                          colors: const [Colors.green, Colors.blue, Colors.pink, Colors.orange, Colors.purple], // manually specify the colors to be used
+                          colors: const [
+                            Colors.green,
+                            Colors.blue,
+                            Colors.pink,
+                            Colors.orange,
+                            Colors.purple
+                          ], // manually specify the colors to be used
                         ),
                         Text("Excellent!", style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold, color: Colors.white)),
                         Container(
@@ -125,7 +131,7 @@ class _PlayPageState extends State<PlayPage> {
                 ),
                 SizedBox(height: 20),
                 KeyPad(activeCell, resolver, unable, refresh),
-                SizedBox(height: 40),
+                SizedBox(height: 30),
               ],
             ),
           ),
